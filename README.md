@@ -5,6 +5,7 @@ It comes with:
 * sbt-eclipse plugin
 * scala-test and specs templates
 
+To get started:
 
 1. To download and launch sbt: 
 
@@ -31,14 +32,14 @@ It comes with:
    
    Note the reload only needs to be done once whenever you change the build.sbt file
 
-3. Write your tests in src/test/scala. To run all your tests, in sbt:
+3. Write your tests in src/test/scala (some examples have been included). To run all your tests:
 
         sbt> test
         
-4. To run just one test, in sbt:
+4. To run just one test:
 
         sbt> test-only com.damianhelme.AppTest
         
-For comments, questions, etc. please see the accompanying [blogpost](http://tech.damianhelme.com/twitter-bootstrap-navbar-dropdowns-and-lifts)
+For comments, questions, etc. please see the accompanying [blogpost](http://http://tech.damianhelme.com/scala-sbt-template)
 
 
