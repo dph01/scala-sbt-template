@@ -9,7 +9,7 @@ To get started:
 
 1. To download and launch sbt: 
 
-        git clone https://github.com/dph01/scala-sbt-template
+        git clone git://github.com/dph01/scala-sbt-template.git
         cd scala-sbt-template
         ./sbt 
 
