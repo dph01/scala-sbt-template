@@ -1,4 +1,4 @@
-This is a template for starting a scala project with sbt.
+This is a simple lightweight template for starting a scala project with sbt.
 
 It comes with:
 
@@ -40,6 +40,6 @@ To get started:
 
         sbt> test-only com.damianhelme.AppTest
         
-For comments, questions, etc. please see the accompanying [blogpost](http://http://tech.damianhelme.com/scala-sbt-template).
+For comments, questions, etc. please see the accompanying [blogpost](http://tech.damianhelme.com/scala-sbt-template).
 
 
