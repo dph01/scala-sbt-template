@@ -5,13 +5,18 @@ version := "0.1.0"
 
 scalaVersion := "2.9.1"
 
-organization := "com.damianhelme"
+organization := "com.mycode"
 
-mainClass := Some("com.damianhelme.App")
+// if you have more than one main method, you can specify which is used when typing 'run' in sbt
+// mainclass := Some("com.mycode.App")
+
+resolvers ++= Seq("snapshots"     at "http://oss.sonatype.org/content/repositories/snapshots",
+                "releases"        at "http://oss.sonatype.org/content/repositories/releases"
+                )
  
 libraryDependencies ++= {
   	Seq(
-		    "org.specs2" %% "specs2" % "1.8" % "test",
+		    "org.specs2" %% "specs2" % "1.12.1" % "test",
     		"org.scalatest" %% "scalatest" % "1.7.1" % "test",
     		"org.scala-lang" % "scala-compiler" % "2.9.1"
   	)
@@ -33,7 +38,7 @@ scalacOptions ++= Seq("-unchecked", "-deprecation")
 	
 	// https://groups.google.com/forum/?hl=en#!activity/liftweb/Um5ghzYMDUoJ/liftweb/DDTzzxRbCNU/qEo0lIbTv4kJ
 	// needed for javaMail 1.4.4
-	resolvers += "Java.net Maven2 Repo" at "http://download.java.net/maven/2/"
+	//resolvers += "Java.net Maven2 Repo" at "http://download.java.net/maven/2/"
 		
 	// jettyConfFiles <<= jettyConfFiles(_.copy(env = Some(file(".") / "src" / "test" / "resources" / "jetty.xml" asFile)))
 	

@@ -14,21 +14,15 @@
    limitations under the License.
    
    */
-package samples
-
-import org.specs2.mutable._
-
-class HelloWorldSpec extends Specification {
-
-    "The 'Hello world' string" should {
-      "contain 11 characters" in {
-        "Hello world" must have size(11)
-      }
-      "start with 'Hello'" in {
-        "Hello world" must startWith("Hello")
-      }
-      "end with 'world'" in {
-        "Hello world" must endWith("world")
-      }
+package com.mycode
+import org.scalatest.FunSuite
+import org.scalatest.FeatureSpec
+ class AppTest extends FunSuite {
+  
+  test("my first test") {
+    expect("hello") {
+      "hello"
     }
   }
+}
+	
