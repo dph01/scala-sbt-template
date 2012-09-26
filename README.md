@@ -32,7 +32,8 @@ Assuming you have Java 1.5 or later installed, to get started:
 
         > eclipse with-sources=true
         
-   Then from within Eclipse, select File->Import->General->Existing Projects Into Workspace, and select your project directory.
+   Then from within Eclipse, select File->Import->General->Existing Projects Into Workspace, and select your project directory. 
+   Install the Eclipse Scala IDE plugin from [here](http://scala-ide.org/download/current.html).
 
 4. Or, to load the project into Intellij IDEA, at the SBT prompt:
    
@@ -42,7 +43,7 @@ Assuming you have Java 1.5 or later installed, to get started:
 
 2. Put your Scala class files in src/main/scala. An example has been created in:
 src/main/scala/com/myapp/App.scala. SBT uses the same folder structure as Maven. 
-For more information see (here)[https://github.com/harrah/xsbt/wiki/Getting-Started-Directories].
+For more information see [here](https://github.com/harrah/xsbt/wiki/Getting-Started-Directories).
 
 3. Write your tests in src/test/scala (some examples have been included). To run all your tests:
 
