@@ -31,7 +31,7 @@ libraryDependencies ++= {
 }
 
 // if you have more than one main method, you can specify which is used when typing 'run' in sbt
-// mainclass := Some("com.mycode.App")
+mainClass := Some("com.mycode.App")
 
 resolvers ++= Seq("snapshots"     at "http://oss.sonatype.org/content/repositories/snapshots",
                 "releases"        at "http://oss.sonatype.org/content/repositories/releases"
