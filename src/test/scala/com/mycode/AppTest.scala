@@ -15,13 +15,13 @@
    
    */
 package com.mycode
+
 import org.scalatest.FunSuite
-import org.scalatest.FeatureSpec
  class AppTest extends FunSuite {
   
-  test("my first test") {
-    expect("hello") {
-      "hello"
+  test("list length") {
+    assertResult(3) {
+      App.listLength(List(1,2,3))
     }
   }
 }
